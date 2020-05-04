@@ -1,15 +1,10 @@
 const express = require("express")
+const router = express.Router()
 const cors = require("cors")
 
-const db = require("../data/db")
 
-const server = express()
-
-server.use(express.json())
-server.use(cors())
-
-server.get('/', (req, res) => {
-    res.json({message: "hello world"})
+router.get('/', (req, res) => {
+    res.status(200).send({message: "hello world"})
 })
 
-server.listen(5000, () => {console.log("server listening on 5000")})
+module.exports = router;
