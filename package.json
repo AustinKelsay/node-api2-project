@@ -4,6 +4,9 @@
   "description": "Project for Node API 2 Module",
   "private": true,
   "main": "index.js",
+  "engines": {
+    "node": "12.16.x"
+  }
   "scripts": {
     "server": "nodemon index.js",
     "start": "node index.js"
